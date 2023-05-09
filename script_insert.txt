@@ -1,0 +1,25 @@
+USE loja;
+INSERT INTO cliente(ID,municipio_ID,Nome,CPF,Ceular,EndLogradouro,EndNumero,EndMunicipio,EndCEP)
+VALUES(
+	DEFAULT,"1",'Igor Vasconcellos',07407407401,21983425062,'Rua dos Cabritos','761',1,12345678),
+    (DEFAULT,"2",'Ana Veiga',01601601601,11876543232,'Rua das Vacas','543',2,33345178),
+    (DEFAULT,"3",'Priscila Maybe',33733733701,31987765456,'Rua dos Gatos','364',3,23145298
+);
+INSERT INTO contareceber(ID,cliente_ID,FaturaVenda_ID,DataConta,DataVencimento,Valor,Situacao)
+	VALUES(
+    DEFAULT,"1",1,'2022-04-23','2022-06-23',475.00,2),
+    (DEFAULT,"2",2,'2022-05-13','2022-07-13',850.30,1),
+    (DEFAULT,"3",3,'2022-05-30','2022-07-30',210.10,3
+);
+INSERT INTO municipio(ID,estado_ID,Nome,CodIBGE)
+	VALUES(
+    DEFAULT,"1",'Rio de Janeiro',3304557),
+    (DEFAULT,"2",'São Paulo',3550308),
+    (DEFAULT,"3",'Minas Gerais',3106200
+);
+INSERT INTO estado(ID,Nome,UF)
+	VALUES(
+    DEFAULT,'Rio de Janeiro','RJ'),
+    (DEFAULT,'São Paulo','SP'),
+    (DEFAULT,'Minas Gerais','MG'
+);
