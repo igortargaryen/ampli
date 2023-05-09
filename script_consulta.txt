@@ -1,0 +1,7 @@
+SELECT
+	contareceber.id as "ID Conta a Receber", cliente.nome as "Nome do Cliente", cliente.cpf as "CPF do CLiente", contareceber.DataVencimento as "Vencimento", contareceber.Valor as "Valor da Conta"
+FROM
+	contareceber
+INNER JOIN
+	cliente ON contareceber.cliente_ID = cliente.id
+WHERE contareceber.Situacao = 1;
