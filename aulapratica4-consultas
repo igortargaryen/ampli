@@ -1,0 +1,56 @@
+lojadb> db.vendas.find({}).pretty()
+[
+  {
+    _id: ObjectId("64ed15e9374a4e772f521e43"),
+    nome: 'João',
+    clienteVIP: '1',
+    email: 'joao@email.com',
+    telefone: [ '9999-1111', '8888-1111' ],
+    endereco: {
+      rua: 'Rua 1',
+      numero: '1000',
+      complemento: 'Apto 1 Bloco 1',
+      cidade: 'São Paulo',
+      estado: 'SP'
+    },
+    compras: { produto: 'Notebook', preco: 'R$ 5000,00', quantidade: '1' }
+  },
+  {
+    _id: ObjectId("64ed1877374a4e772f521e46"),
+    nome: 'Marcos',
+    clienteVIP: '0',
+    email: 0,
+    telefone: [ '9999-2222', 0 ],
+    endereco: {
+      rua: 'Rua dois',
+      numero: '4000',
+      complemento: '',
+      cidade: 'Campinas',
+      estado: 'SP'
+    },
+    compras: {
+      produto: [ 'Caderno', 'Caneta', 'Borracha' ],
+      preco: [ 'R$ 20,00', 'R$ 3,00', 'R$ 2,00' ],
+      quantidade: [ '1', '5', '2' ]
+    }
+  },
+  {
+    _id: ObjectId("64ed18c5374a4e772f521e47"),
+    nome: 'Maria',
+    clienteVIP: '1',
+    email: 'maria@email.com',
+    telefone: [ '9999-3333', '8888-3333', '9988-3000' ],
+    endereco: {
+      rua: 'Rua Três',
+      numero: '3000',
+      complemento: '',
+      cidade: 'Londrina',
+      estado: 'PR'
+    },
+    compras: {
+      produto: [ 'Tablet', 'Capa para tablet' ],
+      preco: [ 'R$ 2500,00', 'R$ 50,00' ],
+      quantidade: [ '1', '1' ]
+    }
+  }
+]
